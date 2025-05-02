@@ -7,4 +7,5 @@ string=input()
 string=string.upper()
 list_of_words=string.split()
 for words in range(len(list_of_words)):
-    print(list_of_words[words][0], end='')
+    if list_of_words[words][0].isalpha():
+        print(list_of_words[words][0], end='')
